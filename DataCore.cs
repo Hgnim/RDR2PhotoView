@@ -11,7 +11,7 @@ using System.IO;
 namespace RDR2PhotoView {
 	internal struct PInfo {
 		internal const string name = "RDR2PhotoView";
-		internal const string version = "1.0.0.20241212_beta";
+		internal const string version = "1.0.1.20241216_beta";
 		internal const string githubUrl = "https://github.com/Hgnim/RDR2PhotoView";
 		internal const string aboutText =
 @$"程序名: RDR2照片查看器

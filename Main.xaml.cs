@@ -31,9 +31,7 @@ namespace RDR2PhotoView {
 
 			LoadImages();
 
-			Task.Run(() => {
-				ProgramUpdate(true);
-			});
+			ProgramUpdate();
 		}
 		private void Window_Closed(object sender, EventArgs e) {
 			MainData.SaveData();
@@ -248,8 +246,8 @@ namespace RDR2PhotoView {
 					switch (MessageBox.Show(
 @$"检查到可用的更新，是否进行更新？
 当前版本: V{PInfo.version}
-最新版本: {cuv.NewVersionStr}
-发布时间: {DateTime.Parse(cuv.PublishedTime).AddHours(8)}"/*将UTC时间转换为北京时间*/
+最新版本: {cuv.LatestVersionStr}
+发布时间: {cuv.PublishedTime_Local.AddHours(8)}"/*将UTC时间转换为北京时间*/
 									, this.Title, MessageBoxButton.YesNo, MessageBoxImage.Information)) {
 						case MessageBoxResult.Yes:
 							UpdateFromGithub.InfoOfInstall? ioi = await ufg.DownloadReleaseAsync(0);
