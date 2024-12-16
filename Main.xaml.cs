@@ -31,7 +31,7 @@ namespace RDR2PhotoView {
 
 			LoadImages();
 
-			ProgramUpdate();
+			ProgramUpdate(true);
 		}
 		private void Window_Closed(object sender, EventArgs e) {
 			MainData.SaveData();
