@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
+
+	  <Title>荒野大镖客2照片查看器</Title>
+	  <Company>Hgnim</Company>
+	  <Product>RDR2PhotoView</Product>
+	  <Description>荒野大镖客2照片查看器</Description>
+	  <Copyright>Copyright (C) 2024 Hgnim, All rights reserved.</Copyright>
+	  <AssemblyName>RDR2照片查看器</AssemblyName>
+	  <AssemblyVersion>1.0.2.1216</AssemblyVersion>
+	  <FileVersion>1.0.2.1216</FileVersion>
+	  <Version>1.0.2.20241216</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EasyUpdateFromGithub" Version="1.2.3.20241213" />
+    <PackageReference Include="YamlDotNet" Version="16.2.1" />
+  </ItemGroup>
+
+</Project>

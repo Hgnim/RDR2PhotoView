@@ -247,7 +247,7 @@ namespace RDR2PhotoView {
 @$"检查到可用的更新，是否进行更新？
 当前版本: V{PInfo.version}
 最新版本: {cuv.LatestVersionStr}
-发布时间: {cuv.PublishedTime_Local.AddHours(8)}"/*将UTC时间转换为北京时间*/
+发布时间: {cuv.PublishedTime_Local}"
 									, this.Title, MessageBoxButton.YesNo, MessageBoxImage.Information)) {
 						case MessageBoxResult.Yes:
 							UpdateFromGithub.InfoOfInstall? ioi = await ufg.DownloadReleaseAsync(0);
